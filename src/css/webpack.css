@@ -1,0 +1,470 @@
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .float {
+      float: left;
+    }
+
+    .layout {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+    }
+
+    .chearfix:after {
+      content: " ";
+      display: block;
+      clear: both;
+    }
+    /*carousel*/
+
+    .img-ct,
+    .bullet {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .carousel {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .img-ct {
+      position: absolute;
+      width: 500%;
+    }
+
+    .img-ct>li {
+      float: left;
+      width: 20%;
+      height: 100%;
+    }
+
+    .img-ct img {
+      width: 100%;
+    }
+
+    .btn {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      margin-top: -15px;
+      line-height: 30px;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+
+    .btn:hover {
+      opacity: .8;
+    }
+
+    .pre {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    .bullet {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      font-size: 0;
+      text-align: center;
+    }
+
+    .bullet>li {
+      display: inline-block;
+      border: 1px solid #fff;
+      width: 30px;
+      height: 5px;
+      border-radius: 4px;
+      margin: 0 3px;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: #00a1d6;
+    }
+    /*lazy*/
+
+    #photo {
+      padding:  75px 50px;
+      text-align: center;
+    }
+
+    #photo a{
+      display: inline-block;
+      margin-top: 50px;
+      height: 50px;
+      width: 100px;
+      color: #fff;
+      border-radius: 5px;
+      line-height: 50px;
+      background-color: #00a1d6;
+    }
+
+    .lazy {
+      margin-top: 70px;
+      position: relative;
+      width: 100%;
+    }
+
+    .lazy li {
+      margin: 5px;
+      position: absolute;
+      transition: all 1s;
+      opacity: 0;
+    }
+    /*head*/
+
+    #header {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    #header>.navbar {
+      position: fixed;
+      width: 90%;
+      min-height: 50px;
+      left: 0;
+      right: 0;
+      line-height: 50%;
+      margin: 0 auto;
+      padding: 25px;
+      background-color: transparent;
+      z-index: 1;
+    }
+
+    #header>.navbar>.layout>a {
+      float: left;
+      color: #1296db;
+      font-size: 42px;
+      text-shadow: 3px 2px 2px #ccc;
+      font-style: italic;
+      height: 100%;
+    }
+
+    #header>.navbar>.layout>a:hover {
+      opacity: .4;
+    }
+
+    .navbar>.layout>ul {
+      float: right;
+    }
+
+    .navbar>.layout>ul>li {
+      float: left;
+      margin: 5px;
+    }
+
+    .navbar>.layout>ul>li>a {
+      color: #71C1E9;
+      text-shadow: 3px 2px 2px #ccc;
+      font-size: 16px;
+      height: 100%;
+    }
+
+    .navbar>.layout>ul>li>a:hover {
+      background-color: #ccc;
+      opacity: .3;
+      border-radius: 5px;
+    }
+
+    #services,
+    #portfolio,
+    #about,
+    #team {
+      padding: 75px 0;
+    }
+
+    #services>h1,
+    #portfolio>div>h1,
+    #photo>h1,
+    #about>h1,
+    #team>div>h1 {
+      margin-bottom: 20px;
+    }
+
+    #services>p,
+    #portfolio>div>p,
+    #about>p,
+    #team>div>p {
+      margin: 25px 0 75px 0;
+      font-style: italic;
+    }
+
+    #services>div>div {
+      float: left;
+      width: 33.3%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    #services,
+    #photo,
+    #team {
+      background-color: #f7f7f7;
+    }
+
+    .wrap {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 33.3%;
+      padding: 10px;
+      margin-bottom: 30px;
+      float: left;
+    }
+
+    .wrap>a,
+    .wrap>a>img {
+      display: inline-block;
+      width: 100%;
+    }
+
+    .wrap>a:hover {
+      opacity: .6;
+    }
+
+    .info {
+      background-color: #fff;
+      width: 100%;
+      display: inline-block;
+    }
+
+    #about>p {
+      margin-bottom: 60px;
+    }
+
+    #about>ul>li>img {
+      display: inline-block;
+      border-radius: 50%;
+      border: 7px solid #ccc;
+      width: 300px;
+      height: 169px;
+    }
+
+    #about>ul>li {
+      position: relative;
+      padding: 0 0 180px 0;
+      height: 169px;
+    }
+
+    #about>ul>li:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      border-left: 3px solid #ccc;
+      height: 100%;
+      z-index: -1;
+    }
+
+    #about>ul>li:last-child {
+      padding-bottom: 0;
+    }
+
+    .summary {
+      width: 25em;
+      margin-right: 165px;
+      position: absolute;
+      top: 0px;
+      right: 50%;
+      text-align: right;
+    }
+
+    #about>ul>li:nth-child(even)>.summary {
+      left: 50%;
+      margin-left: 165px;
+      text-align: left;
+    }
+
+    #about>ul>li:last-child>div {
+      display: inline-block;
+      border-radius: 50%;
+      border: 7px solid #ccc;
+      width: 300px;
+      height: 169px;
+      background-color: #325391;
+      line-height: 169px;
+      color: #f7f7f7;
+      font-weight: bold;
+    }
+
+    #team>div>ul>li>img {
+      width: 225px;
+      border-radius: 50%;
+      border: 7px solid #fff;
+      margin: 0 auto;
+    }
+
+    #team .iconfont,
+    #footer .iconfont {
+      color: #aaa;
+      font-size: 36px;
+    }
+
+    #team ul {
+      padding: 0;
+    }
+
+    #team>div>ul>li>div {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    #team>div>ul>li {
+      width: 33.3333%;
+    }
+
+    #team>div>ul>li>div>ul>li {
+      display: inline-block;
+      padding: 0 5px;
+    }
+
+    #team>div>ul>li>div>ul>li>a:hover {
+      opacity: .3;
+    }
+
+    #link {
+      background-color: #fff;
+    }
+
+    #link>div>ul {
+      padding: 0;
+      margin: 80px 0;
+    }
+
+    #link>div>ul>li {
+      display: inline-block;
+      width: 24%;
+    }
+
+    #contact-us {
+      background: no-repeat url(../../img/contact-us.jpg);
+      background-size: 100%;
+      height: 746px;
+      overflow: hidden;
+    }
+
+    .c-font {
+      color: #ccc;
+      margin-top: 70px;
+    }
+
+    .c-font>p {
+      margin-top: 50px;
+      font-style: italic;
+      margin-bottom: 100px;
+    }
+
+    .c-form {
+      height: 236px;
+    }
+
+    .c-form ul {
+      padding: 0 20px;
+      width: 47%;
+      height: 100%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .c-form ul>li {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .c-form ul>li>input[type=text] {
+      display: inline-block;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .c-textarea {
+      padding: 20px;
+      width: 45%;
+      height: 169px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .c-button {
+      outline: 0;
+      border-radius: 5px;
+      background-color: #1296db;
+      border-color: #1296db;
+      color: #ccc;
+      display: inline-block;
+      width: 250px;
+      height: 80px;
+      line-height: 80px;
+      cursor: pointer;
+    }
+
+    .f-font>ul {
+      margin: 20px 0;
+      padding: 0;
+    }
+
+    .f-font ul>li {
+      display: inline-block;
+    }
+
+    .f-font>ul>li {
+      width: 32.33%;
+    }
+
+    .f-font .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .f-font a {
+      color: #1296db;
+      margin: 0 10px;
+    }
+
+    .f-font a:hover {
+      opacity: .6;
+    }
+    #gotop{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      height: 50px;
+      line-height: 50px;
+      width: 50px;
+      background-color: #ccc;
+      opacity: 0.6;
+      cursor: pointer;
+    }
